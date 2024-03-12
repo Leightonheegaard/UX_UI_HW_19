@@ -1,0 +1,130 @@
+/*
+select by element type (button, div, section, footer)
+select by class ( start with .  .content)
+select by id (start with #  #main)
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+main {
+  margin: 0 50px;
+}
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+.logo {
+  min-width: 79px;
+  text-align: center;
+  width: 15%;
+  padding: 1%;
+}
+.logo img {
+  width: 100%;
+}
+nav {
+  width: 75%;
+  padding: 1%;
+}
+ul {
+  width: 50%;
+  margin-left: auto;
+}
+.heroImg {
+  padding: 25px;
+}
+.content {
+  width: 500px;
+  margin: 0 auto;
+}
+.content img {
+  width: 100%;
+}
+footer {
+  background-color: #f4f4ff;
+  padding: 20px;
+}
+footer ul {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+}
+footer ul li {
+  padding: 10px;
+}
+.flexContainer {
+  display: flex;
+}
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(248, 191, 154, 0.85);
+  border: 1px solid brown;
+  width: 30%;
+  padding: 1%;
+  margin: 1.5%;
+}
+.skill-item img {
+  width: 100%;
+}
+.workGrid {
+  display: grid;
+  grid-template-rows: 300px 300px;
+  grid-template-columns: 40% 60%;
+  grid-template-areas:
+    "row1img row1content"
+    "row2img row2content";
+  gap: 20px;
+  background-color: rgb(228, 185, 161);
+  padding: 20px;
+}
+.row1img {
+  grid-area: row1img;
+}
+.row1content {
+  grid-area: row1content;
+}
+.row2img {
+  grid-area: row2img;
+}
+.row2content {
+  grid-area: row2content;
+}
+.row1img img {
+  height: 100%;
+}
+.row2img img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  main {
+    margin: 0 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  main {
+    margin: 0 5px;
+  }
+  .workGrid {
+    grid-template-rows: 300px 300px 300px 300px;
+    grid-template-columns: 100%;
+    grid-template-areas: "row1img" "row1content" "row2img" "row2content";
+  }
+  .row1img {
+    grid-area: row1img;
+  }
+  .row1content {
+    grid-area: row1content;
+  }
+  .row2img {
+    grid-area: row2img;
+  }
+  .row2content {
+    grid-area: row2content;
+  }
+}

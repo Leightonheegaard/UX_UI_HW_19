@@ -12,6 +12,22 @@ select by id (start with #  #main)
 main {
   margin: 0 50px;
 }
+.peach {
+  background: #f8b595;
+}
+
+.coral {
+  background: #f67280;
+}
+
+.pinkish {
+  background: #c06c84;
+}
+
+.purple {
+  background: #6c5b7c;
+}
+
 .inline-block {
   display: inline-block;
   vertical-align: top;
@@ -44,7 +60,6 @@ ul {
   width: 100%;
 }
 footer {
-  background-color: #f4f4ff;
   padding: 20px;
 }
 footer ul {
@@ -62,7 +77,6 @@ footer ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(248, 191, 154, 0.85);
   border: 1px solid brown;
   width: 30%;
   padding: 1%;
@@ -79,7 +93,6 @@ footer ul li {
     "row1img row1content"
     "row2img row2content";
   gap: 20px;
-  background-color: rgb(228, 185, 161);
   padding: 20px;
 }
 .row1img {
